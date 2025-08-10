@@ -1,13 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vite App</title>
+		<link rel="stylesheet" href="/src/styles/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__nav-wrapper">
+					<span>
+						<a href="#" class="header__logo text-xl fw-bold">Build App</a></span
+					>
+					<nav class="main-nav">
+						<ul class="main-nav__list">
+							<li class="main-nav__item">
+								<a
+									href="/src/features/page-1/page-1.html"
+									class="main-nav__link text-xs"
+									>Page 1</a
+								>
+							</li>
+							<li class="main-nav__item">
+								<a
+									href="/src/features/page-2/page-2.html"
+									class="main-nav__link text-xs"
+									>Page 2</a
+								>
+							</li>
+							<li class="main-nav__item">
+								<a href="#" class="main-nav__link text-xs">Page 3</a>
+							</li>
+							<li class="main-nav__item">
+								<a href="#" class="main-nav__link text-xs">Page 4</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="main-content">
+			<div class="container">
+				<section class="hero">
+					<div class="hero__title display-xl fw-bold">
+						Let's Start <br />
+						Building Something
+					</div>
+				</section>
+			</div>
+		</main>
+		<script type="module" src="/src/main.js"></script>
+	</body>
 </html>

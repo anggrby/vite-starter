@@ -1,0 +1,460 @@
+:root {
+	/* #region 1. ------------- Color Styles-------------*/
+	/* Primary Colors - Gray */
+	--gray-25: #fcfcfd;
+	--gray-50: #f9fafb;
+	--gray-100: #f2f4f7;
+	--gray-200: #eaecf0;
+	--gray-300: #d0d5dd;
+	--gray-400: #98a2b3;
+	--gray-500: #667085;
+	--gray-600: #475467;
+	--gray-700: #344054;
+	--gray-800: #1d2939;
+	--gray-900: #101828;
+
+	/* Primary Colors - Brand */
+	--brand-25: #fcfaff;
+	--brand-50: #f9f5ff;
+	--brand-100: #f4ebff;
+	--brand-200: #e9d7fe;
+	--brand-300: #d6bbfb;
+	--brand-400: #b692f6;
+	--brand-500: #9e77ed;
+	--brand-600: #7f56d9;
+	--brand-700: #6941c6;
+	--brand-800: #553098;
+	--brand-900: #42307d;
+
+	/* Primary Colors - Error */
+	--error-25: #fffbfa;
+	--error-50: #fef3f2;
+	--error-100: #fee4e2;
+	--error-200: #fecdca;
+	--error-300: #fda29b;
+	--error-400: #f97066;
+	--error-500: #f04438;
+	--error-600: #d92d20;
+	--error-700: #b42318;
+	--error-800: #912018;
+	--error-900: #7a271a;
+
+	/* Primary Colors - Warning */
+	--warning-25: #fffcf5;
+	--warning-50: #fffaeb;
+	--warning-100: #fef0c7;
+	--warning-200: #fedf89;
+	--warning-300: #fec84b;
+	--warning-400: #fdb022;
+	--warning-500: #f79009;
+	--warning-600: #dc6803;
+	--warning-700: #b54708;
+	--warning-800: #93370d;
+	--warning-900: #7a2e0e;
+
+	/* Primary Colors - Success */
+	--success-25: #f6fef9;
+	--success-50: #ecfdf3;
+	--success-100: #d1fadf;
+	--success-200: #a6f4c5;
+	--success-300: #6ce9a6;
+	--success-400: #32d583;
+	--success-500: #12b76a;
+	--success-600: #039855;
+	--success-700: #027a48;
+	--success-800: #05603a;
+	--success-900: #054f31;
+
+	/* Secondary Colors - Blue Gray */
+	--blue-gray-25: #fcfcfd;
+	--blue-gray-50: #f8f9fc;
+	--blue-gray-100: #eaecf5;
+	--blue-gray-200: #d5d9eb;
+	--blue-gray-300: #afb5d9;
+	--blue-gray-400: #717bbc;
+	--blue-gray-500: #4e5ba6;
+	--blue-gray-600: #3e4784;
+	--blue-gray-700: #363f72;
+	--blue-gray-800: #293056;
+	--blue-gray-900: #101323;
+
+	/* Secondary Colors - Blue Light */
+	--blue-light-25: #f5fbff;
+	--blue-light-50: #f0f9ff;
+	--blue-light-100: #e0f2fe;
+	--blue-light-200: #bae6fd;
+	--blue-light-300: #7dd3fc;
+	--blue-light-400: #38bdf8;
+	--blue-light-500: #0ea5e9;
+	--blue-light-600: #0284c7;
+	--blue-light-700: #0369a1;
+	--blue-light-800: #175cd3;
+	--blue-light-900: #194185;
+
+	/* Secondary Colors - Blue */
+	--blue-25: #f5f8ff;
+	--blue-50: #eff4ff;
+	--blue-100: #d1e0ff;
+	--blue-200: #b2ccff;
+	--blue-300: #84adff;
+	--blue-400: #528bff;
+	--blue-500: #2970ff;
+	--blue-600: #155eef;
+	--blue-700: #004eeb;
+	--blue-800: #0040c1;
+	--blue-900: #00359e;
+
+	/* Secondary Colors - Indigo */
+	--indigo-25: #f5f8ff;
+	--indigo-50: #eef4ff;
+	--indigo-100: #e0e7ff;
+	--indigo-200: #c7d2fe;
+	--indigo-300: #a5b4fc;
+	--indigo-400: #8b9cf9;
+	--indigo-500: #7c7cf8;
+	--indigo-600: #6366f1;
+	--indigo-700: #5b21b6;
+	--indigo-800: #4338ca;
+	--indigo-900: #3730a3;
+
+	/* Secondary Colors - Purple */
+	--purple-25: #fafaff;
+	--purple-50: #f4f3ff;
+	--purple-100: #ebe9fe;
+	--purple-200: #d9d6fe;
+	--purple-300: #bdb4fe;
+	--purple-400: #9b8afb;
+	--purple-500: #7a5af8;
+	--purple-600: #6938ef;
+	--purple-700: #5925dc;
+	--purple-800: #4a1fb8;
+	--purple-900: #3e1065;
+
+	/* Secondary Colors - Pink */
+	--pink-25: #fef7f7;
+	--pink-50: #fdf2f8;
+	--pink-100: #fce7f3;
+	--pink-200: #fbcfe8;
+	--pink-300: #f8b4d9;
+	--pink-400: #f48fb1;
+	--pink-500: #ee46bc;
+	--pink-600: #dd2590;
+	--pink-700: #c11574;
+	--pink-800: #9d174d;
+	--pink-900: #831843;
+
+	/* Secondary Colors - Rose */
+	--rose-25: #fff5f6;
+	--rose-50: #fff1f3;
+	--rose-100: #ffe4e8;
+	--rose-200: #fecdd6;
+	--rose-300: #fda4af;
+	--rose-400: #fb7185;
+	--rose-500: #f43f5e;
+	--rose-600: #e11d48;
+	--rose-700: #be123c;
+	--rose-800: #9f1239;
+	--rose-900: #881337;
+
+	/* Secondary Colors - Orange */
+	--orange-25: #fffaf5;
+	--orange-50: #fff4ed;
+	--orange-100: #ffe6cc;
+	--orange-200: #ffd4a3;
+	--orange-300: #ffb366;
+	--orange-400: #ff9500;
+	--orange-500: #ff8a00;
+	--orange-600: #e6640a;
+	--orange-700: #bc4a00;
+	--orange-800: #97360d;
+	--orange-900: #772917;
+
+	/* Gradient Colors - Gray */
+	--gray-gradient-600: linear-gradient(90deg, #535862 0%, #717680 100%);
+	--gray-gradient-700: linear-gradient(45deg, #414651 0%, #535862 100%);
+	--gray-gradient-800: linear-gradient(45deg, #252837 0%, #535862 100%);
+	--gray-gradient-800-600: linear-gradient(90deg, #535862 0%, #252837 100%);
+	--gray-gradient-800-700: linear-gradient(26.5deg, #252837 0%, #414651 100%);
+	--gray-gradient-900: linear-gradient(45deg, #101828 0%, #535862 100%);
+
+	/* Gradient Colors - Brand */
+	--brand-gradient-600: linear-gradient(90deg, #7f56d9 0%, #000000 100%);
+	--brand-gradient-700: linear-gradient(45deg, #6941c6 0%, #7f56d9 100%);
+	--brand-gradient-800: linear-gradient(45deg, #533889 0%, #000000 100%);
+	--brand-gradient-800-600: linear-gradient(90deg, #7f56d9 0%, #533889 100%);
+	--brand-gradient-800-700: linear-gradient(26.5deg, #533889 0%, #6941c6 100%);
+	--brand-gradient-900: linear-gradient(45deg, #42307d 0%, #7f56d9 100%);
+	--black-clr: black;
+	--white-clr: white;
+
+	/* #endregion */
+	/* #region 2. ------------- Typography -------------*/
+	/* #region Font size */
+
+	--fs-display-2xl: 4.5rem; /* 72px */
+	--fs-display-xl: 3.75rem; /* 60px */
+	--fs-display-lg: 3rem; /* 48px */
+	--fs-display-md: 2.25rem; /* 36px */
+	--fs-display-sm: 1.88rem; /* 30px */
+	--fs-display-xs: 1.5rem; /* 24px */
+	--fs-text-xl: 1.25rem; /* 20px */
+	--fs-text-lg: 1.13rem; /* 18px */
+	--fs-text-md: 1rem; /* 16px */
+	--fs-text-sm: 0.88rem; /* 14px */
+	--fs-text-xs: 0.75rem; /* 12px */
+
+	/* #endregion */
+	/* #region Line height */
+
+	--lh-display-2xl: 6.25rem; /* 104px */
+	--lh-display-xl: 5rem; /* 84px */
+	--lh-display-lg: 4.25rem; /* 72px */
+	--lh-display-md: 3rem; /* 52px */
+	--lh-display-sm: 2.5rem; /* 44px */
+	--lh-display-xs: 2.25rem; /* 36px */
+	--lh-text-xl: 2.125rem; /* 36px */
+	--lh-text-lg: 2rem; /* 32px */
+	--lh-text-md: 1.75rem; /* 28px */
+	--lh-text-sm: 1.5rem; /* 24px */
+	--lh-text-xs: 1.25rem; /* 20px */
+
+	/* #endregion */
+	/* #region Letter spacing */
+	--ls-display-2xl: -0.02em; /* -1.44px */
+	--ls-display-xl: -0.02em; /* -1.2px */
+	--ls-display-lg: -0.02em; /* -0.96px */
+	--ls-display-md: -0.02em; /* -0.72px */
+	--ls-display-sm: -0.02em; /* -0.6px */
+	--ls-display-xs: -0.02em; /* -0.48px */
+	--ls-text-xl: -0.02em; /* -0.4px */
+	--ls-text-lg: -0.02em; /* -0.36px */
+	--ls-text-md: -0.02em; /* -0.32px */
+	--ls-text-sm: -0.02em; /* -0.28px */
+	--ls-text-xs: -0.02em; /* -0.24px */
+
+	/* #endregion */
+	/* #region Tailwind Standard */
+	/* Font weight */
+	--fw-thin: 100;
+	--fw-extralight: 200;
+	--fw-light: 300;
+	--fw-regular: 400;
+	--fw-medium: 500;
+	--fw-semibold: 600;
+	--fw-bold: 700;
+	--fw-extrabold: 800;
+	--fw-black: 900;
+
+	/* Letter Spacing (tracking) */
+	--lt-tighter: -0.05em;
+	--lt-tight: -0.025em;
+	--lt-normal: 0em;
+	--lt-wide: 0.025em;
+	--lt-wider: 0.05em;
+	--lt-widest: 0.1em;
+
+	/* Line Height (leading) */
+	--lh-none: 1;
+	--lh-tight: 1.25;
+	--lh-snug: 1.375;
+	--lh-normal: 1.5;
+	--lh-relaxed: 1.625;
+	--lh-loose: 2;
+
+	/* #region 2. ------------- Spacing -------------*/
+	--spacing-0: 0rem;
+	--spacing-1: 0.25rem; /* 4px */
+	--spacing-2: 0.5rem; /* 8px */
+	--spacing-3: 0.75rem; /* 12px */
+	--spacing-4: 1rem; /* 16px */
+	--spacing-5: 1.25rem; /* 20px */
+	--spacing-6: 1.5rem; /* 24px */
+	--spacing-7: 1.75rem; /* 28px */
+	--spacing-8: 2rem; /* 32px */
+	--spacing-9: 2.25rem; /* 36px */
+	--spacing-10: 2.5rem; /* 40px */
+	--spacing-11: 2.75rem; /* 44px */
+	--spacing-12: 3rem; /* 48px */
+	--spacing-14: 3.5rem; /* 56px */
+	--spacing-16: 4rem; /* 64px */
+	--spacing-18: 4.5rem; /* 64px */
+	--spacing-20: 5rem; /* 80px */
+	--spacing-24: 6rem; /* 96px */
+	--spacing-26: 6.5rem; /* 96px */
+	--spacing-28: 7rem; /* 112px */
+	--spacing-30: 7.5rem; /* 128px */
+	--spacing-32: 8rem; /* 128px */
+	--spacing-36: 9rem; /* 144px */
+	--spacing-40: 10rem; /* 160px */
+	--spacing-44: 11rem; /* 176px */
+	--spacing-48: 12rem; /* 192px */
+	--spacing-52: 13rem; /* 208px */
+	--spacing-56: 14rem; /* 224px */
+	--spacing-60: 15rem; /* 240px */
+	--spacing-64: 16rem; /* 256px */
+	--spacing-72: 18rem; /* 288px */
+	--spacing-80: 20rem; /* 320px */
+	--spacing-96: 24rem; /* 384px */
+
+	/* #endregion */
+	/* #region 2. ------------- Breakpoint -------------*/
+	--breakpoint-sm: 40em; /* 640px ÷ 16 = 40em */
+	--breakpoint-md: 48em; /* 768px ÷ 16 = 48em */
+	--breakpoint-lg: 64em; /* 1024px ÷ 16 = 64em */
+	--breakpoint-xl: 80em; /* 1280px ÷ 16 = 80em */
+	--breakpoint-2xl: 96em; /* 1536px ÷ 16 = 96em */
+
+	/* #endregion */
+	/* #region 2. ------------- Border Radius -------------*/
+	--radius-none: 0px;
+	--radius-sm: 0.125rem; /* 2px */
+	--radius: 0.25rem; /* 4px (default) */
+	--radius-md: 0.375rem; /* 6px */
+	--radius-lg: 0.5rem; /* 8px */
+	--radius-xl: 0.75rem; /* 12px */
+	--radius-2xl: 1rem; /* 16px */
+	--radius-3xl: 1.5rem; /* 24px */
+	--radius-full: 9999px; /* fully rounded */
+
+	/* #endregion */
+	/* #region 2. ------------- Effect Styles -------------*/
+
+	/* Focus Ring */
+	--focus-ring--4px-primary-100: 0px 0px 0px rgba(244, 235, 255, 1);
+	--focus-ring--4px-gray-100: 0px 0px 0px rgba(242, 243, 245, 1);
+	--focus-ring--4px-error-100: 0px 0px 0px rgba(254, 228, 226, 1);
+	--focus-ring--4px-gray-600: 0px 0px 0px rgba(82, 88, 99, 1);
+	--focus-ring--4px-primary-600: 0px 0px 0px rgba(127, 86, 217, 1);
+
+	/* Shadow */
+	--shadow--xs: 0px 1px 2px rgba(10, 13, 18, 0.05);
+	--shadow--xs-focused-4px-primary-100: 0px 0px 0px rgba(244, 235, 255, 1),
+		0px 1px 2px rgba(10, 13, 18, 0.05);
+	--shadow--xs-focused-4px-gray-100: 0px 0px 0px rgba(245, 245, 245, 1),
+		0px 1px 2px rgba(10, 13, 18, 0.05);
+	--shadow--xs-focused-4px-error-100: 0px 0px 0px rgba(254, 228, 226, 1),
+		0px 1px 2px rgba(10, 13, 18, 0.05);
+	--shadow--sm: 0px 1px 2px rgba(10, 13, 18, 0.06),
+		0px 1px 3px rgba(10, 13, 18, 0.1);
+	--shadow--sm-focused-4px-primary-100: 0px 0px 0px rgba(244, 235, 255, 1),
+		0px 1px 2px rgba(10, 13, 18, 0.06), 0px 1px 3px rgba(10, 13, 18, 0.1);
+	--shadow--sm-focused-4px-gray-100: 0px 0px 0px rgba(245, 245, 245, 1),
+		0px 1px 2px rgba(10, 13, 18, 0.06), 0px 1px 3px rgba(10, 13, 18, 0.1);
+	--shadow--md: 0px 2px 4px rgba(10, 13, 18, 0.06),
+		0px 4px 8px rgba(10, 13, 18, 0.1);
+	--shadow--lg: 0px 4px 6px rgba(10, 13, 18, 0.03),
+		0px 12px 16px rgba(10, 13, 18, 0.08);
+	--shadow--xl: 0px 8px 8px rgba(10, 13, 18, 0.03),
+		0px 20px 24px rgba(10, 13, 18, 0.08);
+	--shadow--2xl: 0px 24px 48px rgba(10, 13, 18, 0.18);
+	--shadow--3xl: 0px 32px 64px rgba(10, 13, 18, 0.14);
+	--shadow---portfolio-mockup---main-centre-md: 0px 75px 150px
+		rgba(10, 13, 18, 0.14);
+	--shadow---portfolio-mockup---main-centre-lg: 0px 100px 200px
+		rgba(10, 13, 18, 0.18);
+	--shadow---portfolio-mockup---overlay-right-lg: -100px 100px 150px
+		rgba(10, 13, 18, 0.12);
+	--shadow---portfolio-mockup---overlay-left-lg: 100px 100px 150px
+		rgba(10, 13, 18, 0.12);
+	--shadow---portfolio-mockup---grid-shadow-md: 32px 32px 64px
+		rgba(10, 13, 18, 0.08);
+
+	--background-blur--sm: ;
+	--background-blur--md: ;
+	--background-blur----lg: ;
+	--background-blur----xl: ;
+
+	/* #endregion */
+	/* #endregion */
+}
+/* #region HTML Element */
+body {
+	/* background-color: rgb(167, 167, 167); */
+	font-family: 'Inter', sans-serif;
+	color: var(--white-clr);
+	background-color: #000000;
+}
+
+button {
+	cursor: pointer;
+	border-radius: var(--spacing-2);
+	border: none;
+	color: white;
+}
+
+input {
+	background-color: transparent;
+	border-radius: 9999px;
+	/* outline: none; */
+	color: white;
+}
+
+h1 {
+	font-size: var(--fs-display-xl); /* 60px / 3.75rem */
+	line-height: var(--lh-display-xl); /* 72px / 4.5rem */
+	letter-spacing: var(--ls-display-xl); /* -2% / 0.02em */
+}
+
+h2 {
+	font-size: var(--fs-display-lg); /* 48px / 3rem */
+	line-height: var(--lh-display-lg); /* 60px / 3.75rem */
+	letter-spacing: var(--ls-display-lg); /* -2% / 0.02em */
+}
+
+h3 {
+	font-size: var(--fs-display-md); /* 36px / 2.25rem */
+	line-height: var(--lh-display-md); /* 44px / 2.75rem */
+	letter-spacing: var(--ls-display-md); /* -2% / 0.02em */
+}
+
+h4 {
+	font-size: var(--fs-display-sm); /* 30px / 1.88rem */
+	line-height: var(--lh-display-sm); /* 38px / 2.38rem */
+	letter-spacing: var(--ls-display-sm); /* -2% / 0.02em */
+}
+
+h5 {
+	font-size: var(--fs-display-xs); /* 24px / 1.5rem */
+	line-height: var(--lh-display-xs); /* 32px / 2rem */
+	letter-spacing: var(--ls-display-xs); /* -2% / 0.02em */
+}
+
+h6 {
+	font-size: var(--fs-text-xl); /* 20px / 1.25rem */
+	line-height: var(--lh-text-xl); /* 30px / 1.88rem */
+	letter-spacing: var(--ls-text-xl); /* -2% / 0.02em */
+}
+
+p {
+	font-size: var(--fs-text-lg); /* 18px / 1.13rem */
+	line-height: var(--lh-text-lg); /* 28px / 1.75rem */
+	letter-spacing: var(--ls-text-lg); /* -2% / 0.02em */
+}
+
+/* #endregion */
+
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	background-color: #1d4ed8; /* Blue-600 */
+	color: #ffffff;
+	cursor: pointer;
+	transition: background-color 0.2s ease, box-shadow 0.2s ease;
+	text-decoration: none;
+	user-select: none;
+}
+
+.card {
+	display: flex;
+	border-radius: var(--spacing-3);
+	padding: var(--spacing-3);
+	border: 1px solid var(--white-clr);
+}
+
+.nav-link,
+.nav-logo {
+	color: white;
+	text-decoration: none;
+}

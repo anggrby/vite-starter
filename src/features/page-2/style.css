@@ -1,0 +1,10 @@
+@import url('/src/common/styles/reset.css');
+@import url('/src/common/styles/base.css');
+@import url('/src/common/styles/layout.css');
+@import url('/src/common/styles/utility.css');
+
+body {
+	display: grid;
+	place-items: center;
+	background-color: red;
+}
